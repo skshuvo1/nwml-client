@@ -10,8 +10,13 @@ import Main from './Pages/Main/Main';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main></Main>
+    element: <Main></Main>,
+    children:[
+     
+     
+    ]
   },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
