@@ -1,8 +1,8 @@
 import React from 'react';
-import warping from '../../assets/warping.webp'
-import sizing from '../../assets/Sizing.jpg'
-import folding from '../../assets/mending.webp'
-import toyota from '../../assets/toyota.webp'
+import warping from '../../../assets/warping.webp'
+import sizing from '../../../assets/sizing.jpg'
+import folding from '../../../assets/mending.webp'
+import toyota from '../../../assets/toyota.webp'
 import { FaArrowRight } from 'react-icons/fa6';
 import Partner from '../Partner/Partner';
 

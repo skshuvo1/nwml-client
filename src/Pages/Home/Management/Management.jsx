@@ -1,8 +1,8 @@
 import React from 'react';
-import img1 from '../../assets/person6.jpg'
-import img2 from '../../assets/person7.jpg'
-import img3 from '../../assets/person8.jpg'
-import img4 from '../../assets/person9.jpg'
+import img1 from '../../../assets/person6.jpg'
+import img2 from '../../../assets/person7.jpg'
+import img3 from '../../../assets/person8.jpg'
+import img4 from '../../../assets/person9.jpg'
 import { FaArrowRight } from "react-icons/fa6";
 import Projects from '../Project/Projects';
 

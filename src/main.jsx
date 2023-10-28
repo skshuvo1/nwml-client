@@ -6,16 +6,18 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Main from './Pages/Main/Main';
+import Portfolio from './Pages/Portfolio/Portfolio/Portfolio';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
-    children:[
-     
-     
-    ]
+    
   },
+  {
+    path:'/portfolio',
+    element:<Portfolio></Portfolio>
+  }
 
 ]);
 
