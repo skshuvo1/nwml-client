@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  
   theme: {
     extend: {
       backgroundImage: {
@@ -11,6 +12,10 @@ export default {
         'footer-texture': "url('/img/footer-texture.png')",
       }
     },
+    object:{
+      safelist: ['animate-[drop-in_0.5s]', 'animate-[drop-out_0.5s]']
+    },
+    
   },
   plugins: [require("daisyui")],
 }

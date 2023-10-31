@@ -1,12 +1,13 @@
 import React from 'react';
 import Mission from '../Mission/Mission';
+import './Layout.css'
 import { FaArrowDownLong, FaArrowRightLong, FaArrowUpLong } from "react-icons/fa6";
 
 const Layout = () => {
     return (
         <div className='bg-pink-50 '>
             <h2 className='font-bold text-center text-2xl py-3 mb-12'>Lay<span className ='text-red-500'>out</span></h2>
-            <div className='bg-red-200 w-full hover:skew-y-12 m-auto md:w-2/3 lg:w-1/3 text-gray-500 '>
+            <div className='bg-red-200 w-full  m-auto md:w-2/3 lg:w-1/3 text-gray-500 hover:scale-110 hover:rounded-xl'>
             <div className='flex justify-center m-auto border bg-red-200 border-gray-400 w-48 mb-12 -mt-8 -rotate-12'>
                     <h2 className='bg-red-200'>Gate</h2>
                 </div>
@@ -50,8 +51,7 @@ const Layout = () => {
                     </div>
                  </div>
             <div>
-                <div>
-                <div className='flex my-4 ms-20 md:ms-40  gap-5'>
+                <div className='flex my-4 ms-24 md:ms-40  gap-5'>
                     <FaArrowUpLong className='-mt-6'></FaArrowUpLong>
                 <h2>Road</h2>
                 <FaArrowRightLong></FaArrowRightLong>
@@ -72,12 +72,11 @@ const Layout = () => {
                         <h2>Mosque</h2>
                      </div>
                 </div>
-                <div>
+                <div className='me-12'>
                     <h2 className='border border-gray-400 -mt-14 flex justify-center items-center py-2'>Store</h2>
                     <h2 className='border border-gray-400 flex justify-center items-center w-24 py-3'>CMD</h2>
                 </div>
                 </div> 
-                </div>
                      
                 <div className='flex justify-center m-auto border border-gray-400 w-48'>
                     <h2>Gate</h2>
