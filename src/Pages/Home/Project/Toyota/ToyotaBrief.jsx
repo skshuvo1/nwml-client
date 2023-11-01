@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaArrowRight } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
 const ToyotaBrief = () => {
     return (
@@ -17,6 +19,9 @@ const ToyotaBrief = () => {
         <li>Total Mechanics: 50</li>
         <li>Total Electrician: 40</li>
     </ul>
+</div>
+<div className='mt-6 text-center'>
+   <Link to='/production'> <button className="btn btn-outline btn-secondary my-8">See All <FaArrowRight></FaArrowRight></button></Link>
 </div>
         </div>
     );
