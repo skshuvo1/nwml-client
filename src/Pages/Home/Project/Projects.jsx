@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 const Projects = () => {
     return (
         <div>
+          <div>
             <h2 className='font-bold text-center text-2xl my-8'>Our <span className='text-red-500'> Projects</span></h2>
 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8'>
 <div className="card card-compact bg-base-100 shadow-xl">
@@ -44,12 +45,13 @@ const Projects = () => {
   </div>
 </div>
 </div>
-<div className='mt-6 text-center'>
-    <button className="btn btn-outline btn-secondary mb-4">See All Project <FaArrowRight></FaArrowRight></button>
-</div>
+
 <div>
-  <Partner></Partner>
 </div>
+        </div>
+  <div className='mt-8'>
+  <Partner></Partner>
+  </div>
         </div>
     );
 };
