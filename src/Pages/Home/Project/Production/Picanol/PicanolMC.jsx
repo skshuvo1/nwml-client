@@ -1,8 +1,7 @@
 import React from 'react';
-import ToyotaBrief from './ToyotaBrief';
-import './machine.css'
+import PicanolBrief from './PicanolBrief';
 
-const Machine = () => {
+const PicanolMC = () => {
     return (
         <div className='m-8'>
             <h2 className=' font-bold text-center mb-8 pt-8 text-2xl'>Our <span className='text-red-500'>Machines</span> </h2>
@@ -22,9 +21,9 @@ const Machine = () => {
   <figure><img className=' rounded w-full' src="https://www.konicainternational.com/wp-content/uploads/2021/07/T710-WW-190CM-1.jpg" alt="Shoes" /></figure>
 </div>
 </div>
-<ToyotaBrief></ToyotaBrief>
+<PicanolBrief></PicanolBrief>
 </div>
     );
 };
 
-export default Machine;
+export default PicanolMC;

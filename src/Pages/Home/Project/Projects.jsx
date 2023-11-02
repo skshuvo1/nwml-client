@@ -39,7 +39,7 @@ const Projects = () => {
   <figure className='hover:scale-150 duration-500 hover:z-10'><img className=' h-52' src={toyota} alt="toyota" /></figure>
   <div className="card-body">
     <h2 className="card-title">Production</h2>
-    <p className='text-slate-500'>Toyota Industries develops and manufacturers air jet looms which insert the weft yarn using air., and water jet looms which insert the weft yarn using water.<Link to='/toyota' className='text-blue-700 underline'>See More</Link></p>
+    <p className='text-slate-500'>Toyota Industries develops and manufacturers air jet looms which insert the weft yarn using air., and water jet looms which insert the weft yarn using water.<Link to='/production' className='text-blue-700 underline'>See More</Link></p>
     
   </div>
 </div>
