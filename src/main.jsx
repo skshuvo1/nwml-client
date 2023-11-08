@@ -15,54 +15,67 @@ import Production from './Pages/Home/Project/Production/Production';
 import Rapier from './Pages/Home/Project/Production/Rapier/Rapier';
 import Picanol from './Pages/Home/Project/Production/Picanol/Picanol';
 import Vamatex from './Pages/Home/Project/Production/Vamatex/Vamatex';
+import Login from './Pages/Home/Login/Login';
+import Register from './Pages/Home/Register/Register';
+import AuthProvider from './Provider/AuthProvider';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element:<Main></Main>,
-    
+    element: <Main></Main>,
   },
   {
-    path:'/portfolio',
-    element:<Portfolio></Portfolio>
+    path: '/login',
+    element: <Login></Login>
   },
   {
-    path:'/warping',
-    element:<Warping></Warping>
+    path: '/register',
+    element: <Register></Register>
   },
   {
-    path:'/sizing',
-    element:<Sizing></Sizing>
+    path: '/portfolio',
+    element: <PrivateRoute><Portfolio></Portfolio></PrivateRoute>
   },
   {
-    path:'/folding',
-    element:<Folding></Folding>
+    path: '/warping',
+    element: <Warping></Warping>
   },
   {
-    path:'production',
-    element:<Production></Production>,
+    path: '/sizing',
+    element: <Sizing></Sizing>
   },
   {
-    path:'/toyota',
-    element:<Toyota></Toyota>
+    path: '/folding',
+    element: <Folding></Folding>
   },
   {
-    path:'rapier',
-    element:<Rapier></Rapier>
+    path: 'production',
+    element: <PrivateRoute><Production></Production></PrivateRoute>,
   },
   {
-    path:'picanol',
-    element:<Picanol></Picanol>
+    path: '/toyota',
+    element: <Toyota></Toyota>
   },
   {
-    path:'vamatex',
-    element:<Vamatex></Vamatex>
+    path: 'rapier',
+    element: <Rapier></Rapier>
+  },
+  {
+    path: 'picanol',
+    element: <Picanol></Picanol>
+  },
+  {
+    path: 'vamatex',
+    element: <Vamatex></Vamatex>
   }
 
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 )

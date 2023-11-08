@@ -10,12 +10,13 @@ const ToyotaBrief = () => {
 <h2 className='font-semibold mt-6 mb-3'>Details:</h2>
 <div className='ms-4'>
     <ul className='list-disc'>
-        <li className=''>Total Manpower: 520</li>
-        <li>Manpower/Shift: 60</li>
+        <li className=''>Total Manpower: 250</li>
+        <li>Manpower/Shift: 70</li>
         <li>Total Shift: 03</li>
         <li>Total Machine:128</li>
-        <li>Total Mechanics: 50</li>
-        <li>Total Electrician: 40</li>
+        <li>Total Mechanics: 20</li>
+        <li>Total Electrician: 20</li>
+        <li>Production/year: 11 million yards</li>
     </ul>
 </div>
 

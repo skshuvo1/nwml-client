@@ -17,7 +17,7 @@ const Products = () => {
             <h2 className='font-bold text-center text-2xl my-8 py-3'>Our <span className='text-red-500'> Products</span></h2>
 
             <Marquee className='mb-8' direction='right' speed={30}>
-                <div className='flex mx-auto justify-center '>
+                <div className='flex  gap-8 mx-auto justify-center me-8'>
                
                     {
                         products.map(product => <AllProduct key={product.id} product={product}></AllProduct>)
